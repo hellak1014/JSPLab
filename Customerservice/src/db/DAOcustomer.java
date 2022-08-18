@@ -111,4 +111,81 @@ public class DAOcustomer {
 	      DTOcustomer member = new DTOcustomer(no,id,name,pass,cdate);
 	      return member;
 	   }
+	
+	
+	public static int boardinsert(String title, String content, String iname) throws SQLException, NamingException {
+		
+		Connection conn = null;
+		PreparedStatement stmt = null; 
+		int result = 0;
+		
+		String sql = "INSERT INTO board (title, content, iname) VALUES(?,?,?)"; 
+		
+		conn= ConnectionPool.get(); 
+		
+		stmt = conn.prepareStatement(sql);
+			stmt.setString(1, title);
+			stmt.setString(2, content);
+			stmt.setString(3, iname);
+		
+		result = stmt.executeUpdate(); 
+	 	
+		
+		
+		return result;
+	
+	}
+	
+	public static ArrayList<DTO2> getList1() throws SQLException, NamingException{
+		
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		
+		String sql = "SELECT * FROM board";
+		
+		conn = ConnectionPool.get();
+		stmt = conn.prepareStatement(sql);
+		rs = stmt.executeQuery();
+		
+		ArrayList<DTO2>lists = new ArrayList<DTO2>();
+		
+		while(rs.next()) {
+			lists.add(new DTO2(rs.getString(1),
+							   rs.getString(2),
+							   rs.getString(3),
+							   rs.getString(4),
+							   rs.getString(5)));
+						
+		}
+		
+		return lists;
+		
+	}
+	
+	public static DTO2 fileDetail(String bid) throws NamingException, SQLException {
+	      
+	      Connection conn = null;
+	      PreparedStatement stmt = null;
+	      ResultSet rs = null;
+	      
+	      String sql ="SELECT * FROM board WHERE bid=?";
+	      
+	      conn = ConnectionPool.get();
+	      stmt = conn.prepareStatement(sql);
+	         stmt.setNString(1,bid);
+	      rs = stmt.executeQuery();
+	      
+	      rs.next();
+	      
+	       bid = rs.getString(1);
+	      String title = rs.getString(2);
+	      String content = rs.getString(3);
+	      String iname = rs.getString(4);
+	      String bdate = rs.getString(5);
+	      
+	      DTO2 flie = new DTO2(bid,title,content,iname,bdate);
+	      return flie;
+	   }
+	
 }
