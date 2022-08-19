@@ -11,3 +11,6 @@ day34  notion >> https://www.notion.so/Day34-8d2b78d0afcc4668a2db9438ed8868e5
 
 
 day35 notion >> https://www.notion.so/Day35-7eb4529c117c4beeb3cdcb556a18a3e4
+
+
+day36 notion >> https://www.notion.so/Day36-1b73983fc93b4b819767992050d08d90
