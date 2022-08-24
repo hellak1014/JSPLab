@@ -75,7 +75,7 @@
 	<p> &copy; KEY</p>
 </footer> -->
 
-<%-- <%@ include file="footer.jsp" %> --%>
+<%--  <%@ include file="footer.jsp" %> --%>
 
 
 </body>

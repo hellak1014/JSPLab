@@ -1,49 +1,52 @@
 package DB;
 
 public class DTOboard {
-   private String bid;
-   private String title;
-   private String content;
-   private String iname;
-   public String getBid() {
-      return bid;
-   }
-   public void setBid(String bid) {
-      this.bid = bid;
-   }
-   public String getTitle() {
-      return title;
-   }
-   public void setTitle(String title) {
-      this.title = title;
-   }
-   public String getContent() {
-      return content;
-   }
-   public void setContent(String content) {
-      this.content = content;
-   }
-   public String getIname() {
-      return iname;
-   }
-   public void setIname(String iname) {
-      this.iname = iname;
-   }
-   public String getBdate() {
-      return bdate;
-   }
-   public void setBdate(String bdate) {
-      this.bdate = bdate;
-   }
-   private String bdate;
-   public DTOboard(String bid, String title, String content, String iname, String bdate) {
-      super();
-      this.bid = bid;
-      this.title = title;
-      this.content = content;
-      this.iname = iname;
-      this.bdate = bdate;
-   }
-
-
+   
+	private String bid;
+	private String btitle;
+	private String bcont;
+	private String bauthor;
+	private String bdate;
+	public String getBid() {
+		return bid;
+	}
+	public void setBid(String bid) {
+		this.bid = bid;
+	}
+	public String getBtitle() {
+		return btitle;
+	}
+	public void setBtitle(String btitle) {
+		this.btitle = btitle;
+	}
+	public String getBcont() {
+		return bcont;
+	}
+	public void setBcont(String bcont) {
+		this.bcont = bcont;
+	}
+	public String getBauthor() {
+		return bauthor;
+	}
+	public void setBauthor(String bauthor) {
+		this.bauthor = bauthor;
+	}
+	public String getBdate() {
+		return bdate;
+	}
+	public void setBdate(String bdate) {
+		this.bdate = bdate;
+	}
+	public DTOboard(String bid, String btitle, String bcont, String bauthor, String bdate) {
+		super();
+		this.bid = bid;
+		this.btitle = btitle;
+		this.bcont = bcont;
+		this.bauthor = bauthor;
+		this.bdate = bdate;
+	}
+	
+	
+	
 }
+	

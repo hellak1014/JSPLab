@@ -19,9 +19,9 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/summernote/summernote-lite.css">
 </head>
 <body>
+<% String mname = (String)session.getAttribute("mname");%>
 
-
-<%@ include file="../header.jsp" %>
+<%@ include file="header.jsp" %>
 
 
 <div class="alert alert-secondary" role="alert">
@@ -43,13 +43,17 @@
 			<input name="pid" type="text" class="form-control" placeholder="제품 아이디를 입력하세요">
 		</div>
 	</div>
-
+	
+	<div class="container" style="height:10px;"></div>
+	
 	<div class="form-group row">
 		<label class="col-sm-2">제품명</label>
 		<div class="col-sm-3">
 			<input name="pname" type="text" class="form-control" placeholder="제품명을 입력하세요">
 		</div>
 	</div>
+	
+	<div class="container" style="height:10px;"></div>
 	
 		<div class="container">
 		<label class="col-sm-2">제품설명</label>
@@ -62,6 +66,8 @@
 		});
 		</script>
 	
+	<div class="container" style="height:10px;"></div>
+	
 		<div class="form-group row">
 		<label class="col-sm-2">제품가격</label>
 		<div class="col-sm-3">
@@ -69,11 +75,15 @@
 		</div>
 	</div>
 	
+	<div class="container" style="height:10px;"></div>
+	
 	<div class="form-group row">
 	<div class="col-sm-5">
 	  <input type="file" name="pimage1" class="form-control">
 	 </div>
 	</div>
+	
+	<div class="container" style="height:10px;"></div>
 	
 	<div class="form-group row">
 	<div class="col-sm-5">
@@ -81,11 +91,15 @@
 	 </div>
 	</div>
 	
+	<div class="container" style="height:10px;"></div>
+	
 	<div class="form-group row">
 	<div class="col-sm-5">
 	  <input type="file" name="pimage3" class="form-control">
 	 </div>
 	</div>
+
+<div class="container" style="height:10px;"></div>
 
 	<div class="form-group row">
 		<div class="col-sm-offset-2 col-sm-10">
@@ -107,7 +121,7 @@
 <br>
 <br>
 
-<%@ include file="../footer.jsp" %>
+<%@ include file="footer.jsp" %>
 
 
 </body>

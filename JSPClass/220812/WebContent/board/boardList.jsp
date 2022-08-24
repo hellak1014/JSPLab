@@ -13,49 +13,43 @@
 
 <div class="alert alert-secondary" role="alert">
 <div class="container">
-   <h1 class = "display-3">문의 게시판</h1>
+   <h1 class = "display-3">Board List</h1>
 </div>   
 </div>
 <div class="container w-70">
 <table class="table table-hover table-primary">
   <thead>
     <tr>
-      <th scope="col">번호</th>
-      <th scope="col">제목</th>
-      <th scope="col">작성자</th>
-      <th scope="col">날짜</th>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Content</th>
     </tr>
   </thead>
   <tbody>
   
   <%
-ArrayList<DTOboard> boards = DAOboard.boardList();
-  %> 
- 
-  <%
-for (DTOboard board : boards) {
+ArrayList<DTOboard> files = DAOboard.fileList();
+
+for (DTOboard file : files) {
 %>      
 
     <tr>
-      <th scope="row"><%=board.getBid()%></th>
-      <td>   <a href="boarddetail.jsp?no=<%=board.getBid() %>"><%=board.getBtitle() %></a></td>
-      <td>   <p><%=board.getBauthor() %></p></td>
-      <td>   <p><%=board.getBdate() %></p></td>
+      <th scope="row"><%=file.getBid()%></th>
+      <td>   <a href="boarddetail.jsp?no=<%=file.getBid() %>"><%=file.getTitle() %></a></td>
+      <td>   <a href="boarddetail.jsp?no=<%=file.getBid() %>"><%=file.getContent() %></a></td>
     </tr>
 <%    
    }
 %>    
-  
-  
+    
+    
   </tbody>
 </table>
-
-   
-    
+ 
 	 
    <br>
+</div>
 
- </div>
 	   <br>
 	    <br>
 	  

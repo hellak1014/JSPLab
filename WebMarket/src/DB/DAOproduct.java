@@ -38,7 +38,7 @@ public class DAOproduct {
 	   }
 
 
-	   public static ArrayList<DTOproduct> fileList() throws NamingException, SQLException{
+	   public static ArrayList<DTOproduct> productList() throws NamingException, SQLException{
 	      Connection conn = null;
 	      PreparedStatement stmt = null;
 	      ResultSet rs = null;
@@ -49,10 +49,10 @@ public class DAOproduct {
 	      stmt = conn.prepareStatement(sql);
 	      rs = stmt.executeQuery();
 	      
-	      ArrayList<DTOproduct> files = new ArrayList<DTOproduct>();
+	      ArrayList<DTOproduct> products = new ArrayList<DTOproduct>();
 	      
 	      while(rs.next()) {
-	         files.add(new DTOproduct(rs.getString(1),
+	    	  products.add(new DTOproduct(rs.getString(1),
 	                              rs.getString(2),
 	                              rs.getString(3),
 	                              rs.getString(4),
@@ -60,7 +60,7 @@ public class DAOproduct {
 	                              rs.getString(6),
 	                              rs.getString(7)));
 	      }
-	      return files;
+	      return products;
 	   }
 
 

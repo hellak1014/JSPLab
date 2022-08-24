@@ -26,13 +26,9 @@
 
 <%@ include file = "../header.jsp" %>
 
-<div class="alert alert-secondary" role="alert">
-<div class="container">
 	 <h1>
 		게시판 Member
 	</h1>
-</div>
-</div>
 
 
 <div class="container">
