@@ -17,3 +17,6 @@ day36 notion >> https://www.notion.so/Day36-1b73983fc93b4b819767992050d08d90
 
 
 day39 notion >> https://www.notion.so/Day39-385eb73e44c14b1e9d9ea7e4a636fc7f
+
+
+soloproject - toonview >> minhyuk20.cafe24.com
