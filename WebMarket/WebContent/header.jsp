@@ -20,7 +20,7 @@
             <a class="nav-link" href="board/boardList.jsp">문의 게시판</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="mail.jsp">메일 보내기</a>
           </li>
           
           

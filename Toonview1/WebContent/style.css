@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+	@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+}
+	
+	.web {
+    font-family: 'GangwonEdu_OTFBoldA';
+    
+	}	
+	
+	:root{
+		--background-color:#E2E8F6;
+		
+	}
+
+    header {
+    width: 100%;
+    height:80px;
+	color : #FFFFFF;
+    background-color :#6AB4DC;
+    font-family: 'GangwonEdu_OTFBoldA';
+    /* font-family: 'Poor Story', cursive; */
+	}
+	
+	footer {
+    width: 100%;
+    height:80px;
+	color : #FFFFFF;
+    background-color :#6AB4DC;
+    font-family: 'GangwonEdu_OTFBoldA';
+    /* font-family: 'Poor Story', cursive; */
+	}
+	
+	body {
+	background-color :"#E2E8F6";
+	 width: 100%;
+     height: 100%;
+     font-family: 'GangwonEdu_OTFBoldA';
+    /* font-family: 'SLEIGothicTTF'; */
+	}
+	
+      
+      
+    h1 {
+    font-family: 'GangwonEdu_OTFBoldA';
+    }
+    
+    container {
+    font-family: 'GangwonEdu_OTFBoldA';
+    }
+   
+      
+   col-sm-2 {
+   font-family: 'GangwonEdu_OTFBoldA';
+   }
+  
+  
+  div.table {
+  border: 2px solid #28669A;
+  background-color: #E2E8F6;
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+.divTable.table .divTableCell, .divTable.table .divTableHead {
+  border: 1px solid #E2E8F6;
+  padding: 3px 2px;
+}
+.divTable.table .divTableBody .divTableCell {
+  font-size: 15px;
+}
+.divTable.table .divTableRow:nth-child(even) {
+  background: #BADCEF;
+}
+.table .tableFootStyle {
+  font-size: 13px;
+}
+.table .tableFootStyle .links {
+	 text-align: right;
+}
+.table .tableFootStyle .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #A40808;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.table.outerTableFooter {
+  border-top: none;
+}
+.table.outerTableFooter .tableFootStyle {
+  padding: 3px 5px; 
+}
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+
+
+
+div.cubi {
+	position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-150px;
+    margin-top:-150px;
+}
